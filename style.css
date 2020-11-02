@@ -602,6 +602,9 @@ textarea:focus {
     text-align: center;
     margin-top: 50px;
 }
+#lightgallery a {
+    text-decoration: none;
+}
 .lightgallery-1 {
     display: flex;
 }
