@@ -62,6 +62,7 @@ section {
 .nav-list {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 .nav-list .fa-angle-down {
     color: #20c997;
@@ -250,7 +251,7 @@ nav ul li:hover > .dropdown {
 }
 .block {
     width: 33%;
-    height: 520px;
+    height: auto;
     margin: 10px;
     transition: all 0.3s ease-in-out 0s;
     overflow: hidden;
@@ -273,8 +274,9 @@ nav ul li:hover > .dropdown {
     z-index: 999;
     text-align: center;
     bottom: 45%;
-    left: 30%;
-    right: 30%;
+    left: 0;
+    right: 0;
+    
 }
 .block-overlay:hover img {
     transition: all 0.3s ease-in-out 0s;
@@ -307,6 +309,7 @@ nav ul li:hover > .dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .footer-inner h4 {
     margin-right: 5px;
@@ -347,9 +350,11 @@ nav ul li:hover > .dropdown {
     transform: scale(1.1);
 }
 .about-info {
-    width: 30%;
+    width: 700px;
     position: relative;
     top: 200px;
+    margin-left: 20px;
+    
 }
 .about-info-title {
     font-weight: 200;
@@ -366,29 +371,30 @@ nav ul li:hover > .dropdown {
 .about-owner {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
     
 }
 .about-owner-block {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin-bottom: 100px;
     margin-top: 100px;
 }
 .about-owner-block div:first-child  {
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 300px;
     border-radius: 50%;
-    
+    margin: 0 auto;
+    text-align: center;
 }
+
 .about-owner-block-image img{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     filter: grayscale();
     transition: all 0.3s ease-in-out 0s;
     justify-content: center;
-    
 }
 .about-owner-block-image img:hover {
     transition: all 0.3s ease-in-out 0s;
@@ -397,6 +403,9 @@ nav ul li:hover > .dropdown {
 }
 .about-owner-block p {
     text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 16px;
 }
 .about-owner-icons {
     justify-content: center;
@@ -508,7 +517,9 @@ nav ul li:hover > .dropdown {
 .contact-form {
     width: 800px;
 }
-
+.contact-info {
+    margin-left: 20px;
+}
 .names {
     display: flex;
     justify-content: space-between;
@@ -638,4 +649,194 @@ textarea:focus {
     font-weight: 200;
     font-size: 46px;
     text-align: center;
+}
+/* ======= media ======*/
+@media screen and (max-width: 1260px) {
+    
+}
+@media screen and (max-width: 1200px) {
+    .about-image {
+        width: 600px;
+        height: 900px;
+    }
+    .about-info {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .about-owner-block p {
+        margin: 10px 10px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .about-info {
+        margin-left: 10px;
+        width: 40%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .block-title {
+        font-size: 24px;
+    }
+    .block-button {
+        font-size: 14px;
+    }
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    .services-row-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-row-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-card {
+        width: 75%;
+    }
+    .about-page-inner {
+        justify-content: space-around;
+        height: 600px;
+    }
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+    .about-owner-block div:first-child  {
+        width: 150px;
+    }
+    .about-info {
+        top: 100px;
+        width: 80%;
+        margin-left: 50px;
+    }
+    .about-owner-block {
+        margin-top: 0;
+    }
+    .about-owner-block p {
+        font-size: 14px;
+        margin: 10px 10px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .row-1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .block {
+        width: 80%;
+    }
+    .footer {
+        position: relative;
+        top: 100%;
+        bottom: 0;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .about-owner {
+        margin-top: 600px;
+        flex-wrap: wrap;
+    }
+    .about-page-inner {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .about-info {
+        top: 10px;
+        margin-left: 0;
+    }
+    .about-owner-block div:first-child  {
+        width: 200px;
+    }
+    .about-owner-block-image img {
+        width: 100%;
+        height: auto;
+    }
+    .about-owner-block p {
+        width: 70%;
+        margin: 10px auto;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .about-owner .icons-list {
+        display: flex;
+    }
+    .contact-inner {
+        flex-wrap: wrap-reverse;
+        margin: 0 20px;
+    }
+    .contact-info {
+        text-align: center;
+        margin: 0;
+    }
+    .info-address {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 610px) {
+    .about-owner {
+        margin-top: 500px;
+    }
+    .about-image {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .block-overlay {
+        bottom: 40%;
+    }
+    .block-title {
+        font-size: 20px;
+    }
+    .block-button {
+        font-size: 13px;
+    }
+    .about-info p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .about-image {
+        height: 600px;
+    }
+    .about-owner {
+        margin-top: 400px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .block-button {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-image {
+        height: 500px;
+    }
+    .about-owner {
+        margin-top: 300px;
+    }
+    .footer-inner {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .about-info p {
+        font-size: 12px;
+    }
+    .about-image {
+        height: 400px;
+    }
+    .about-owner {
+        margin-top: 200px;
+    }
 }
