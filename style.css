@@ -241,6 +241,9 @@ nav ul li:hover > .dropdown {
 }
 
 /* ================== main-section ===========*/
+.main-section {
+    margin-bottom: 150px;
+}
 .row-1 {
     display: flex;
     justify-content: space-between;
@@ -250,7 +253,7 @@ nav ul li:hover > .dropdown {
     justify-content: space-between;
 }
 .block {
-    width: 33%;
+    width: auto;
     height: auto;
     margin: 10px;
     transition: all 0.3s ease-in-out 0s;
@@ -304,12 +307,10 @@ nav ul li:hover > .dropdown {
     transition: all 0.3s ease-in-out 0s;
 }
 /* ================= footer =============*/ 
-
 .footer-inner {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .footer-inner h4 {
     margin-right: 5px;
@@ -623,11 +624,7 @@ textarea:focus {
 .lightgallery-1 a {
     margin: 10px;
 }
-.footer-inner {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 /* ========= people gallery =====*/ 
 .people-title {
     font-weight: 200;
@@ -659,9 +656,6 @@ textarea:focus {
     text-align: center;
 }
 /* ======= media ======*/
-@media screen and (max-width: 1260px) {
-    
-}
 @media screen and (max-width: 1200px) {
     .about-image {
         width: 600px;
@@ -688,12 +682,6 @@ textarea:focus {
     }
     .block-button {
         font-size: 14px;
-    }
-    .footer {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        padding-top: 20px;
     }
     .services-row-1 {
         flex-wrap: wrap;
@@ -732,7 +720,6 @@ textarea:focus {
     .lightgallery-1 img {
         width: 30%;
     }
-
 }
 @media screen and (max-width: 900px) {
     .row-1{
@@ -748,7 +735,6 @@ textarea:focus {
     }
     .footer {
         position: relative;
-        top: 100%;
         bottom: 0;
         width: 100%;
         padding-top: 30px;
