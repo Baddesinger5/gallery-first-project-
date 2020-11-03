@@ -722,6 +722,9 @@ textarea:focus {
     }
 }
 @media screen and (max-width: 900px) {
+    .main-section-inner {
+        margin-bottom: 0;
+    }
     .row-1{
         flex-wrap: wrap;
         justify-content: center;
