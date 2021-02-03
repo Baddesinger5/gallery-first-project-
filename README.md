@@ -3,4 +3,4 @@ first project to know a git and github
 
 just for tutorial for me)
 
-to be editing...
+Link here: https://flex-gallery.web.app/ 
